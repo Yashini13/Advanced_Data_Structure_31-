@@ -40,6 +40,11 @@ int cookies(int k , int *a,int size)
         if(a[i]==min||a[i]==min2)
          a[i]=total;   // replacing the array
      }
+     cout<<"updated array:\n";
+     for(int i=0;i<size;i++)
+     {    
+         cout<<a[i]<<endl;  
+     }
      cnt++;
   }
 
@@ -50,7 +55,12 @@ int main() {
     int a[] = {2,6,8,5, 20, 12}; 
     int size = sizeof(a) / sizeof(a[0]); 
     int ans = cookies(k, a,size);
-    printf("%d\n No.of Iterations : ", ans); 
-
+    for (int i=0;i<size;i++)
+    {
+      cout<<a[i]<<endl;
+    }
+   
+    printf("\n No.of Iterations : %d", ans); 
+   
     return 0;
 }
